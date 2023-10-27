@@ -1,0 +1,13 @@
+Nível 1
+- Selnium IDE:Grava, executa e exporta os scripts
+- Adaptar o script no Selenium Web Driver
+- Cria um script simples do zero
+
+Nível 2
+- Selenium com SpecFlow: BDD / Gherkin / Cucumber
+  2 arquivos:
+  - .feature --> descrição / critério de aceitação
+  - .cs --> passos da automação
+
+- Selenium com PageObjects / Page Factory
+
