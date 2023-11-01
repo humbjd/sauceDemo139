@@ -97,7 +97,7 @@ namespace sauceDemo139.Features
         testRunner.When("preencho o usuario como \"standard_user\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 5
-        testRunner.And("a senha \"sauce_secret\" e clico no botao Login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+        testRunner.And("a senha \"secret_sauce\" e clico no botao Login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 6
         testRunner.Then("exibe \"Products\" no titulo da secao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

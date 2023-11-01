@@ -2,7 +2,7 @@ Feature: Selecionar Produto na Loja
     Scenario: Selecao de Produto com sucesso
         Given que acesso a pagina inicial do site
         When preencho o usuario como "standard_user"
-        And a senha "sauce_secret" e clico no botao Login
+        And a senha "secret_sauce" e clico no botao Login
         Then exibe "Products" no titulo da secao
         When adiciono o produto "Sauce Labs Backpack" ao carrinho
         And clico no icone do carrinho de compras
