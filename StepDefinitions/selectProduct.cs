@@ -45,6 +45,7 @@ namespace MyNamespace
         }
 
         [When(@"preencho o usuario como ""(.*)""")]
+        [When(@"preencho o ""(.*)""")]
         public void WhenPreenchoOUsuarioComo(string username)
         {
             driver.FindElement(By.Id("user-name")).SendKeys(username);
