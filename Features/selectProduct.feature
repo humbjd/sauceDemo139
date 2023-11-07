@@ -19,10 +19,14 @@ Feature: Selecionar Produto na Loja
         When adiciono o produto <produto> ao carrinho
         And clico no icone do carrinho de compras
         Then exibe a pagina do carrinho com quantidade <quantidade>
-        And nome do produto "Sauce Labs Backpack"
+        And nome do produto <produto>
         And o preco como <preco>
 
     Examples:
-    | usuario         | senha          | tituloSecao | produto                 | quantidade | preco    |
-    | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Backpack"   | "1"        | "$29.99" |
-    | "visual_user"   | "secret_sauce" | "Products"  | "Sauce Labs Bike Light" | "1"        | "$9.99"  |
+    | usuario         | senha          | tituloSecao | produto                             | quantidade | preco    |
+    | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Backpack"               | "1"        | "$29.99" |
+    | "visual_user"   | "secret_sauce" | "Products"  | "Sauce Labs Bike Light"             | "1"        | "$9.99"  |
+    | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Bolt T-Shirt"           | "1"        | "$15.99" |
+    | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Fleece Jacket"          | "1"        | "$49.99" |
+    | "visual_user"   | "secret_sauce" | "Products"  | "Sauce Labs Onesie"                 | "1"        | "$7.99"  |
+    | "standard_user" | "secret_sauce" | "Products"  | "Test.allTheThings() T-Shirt (Red)" | "1"        | "$15.99" |

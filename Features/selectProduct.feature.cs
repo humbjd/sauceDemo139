@@ -124,7 +124,11 @@ namespace sauceDemo139.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Selecao de Produto com sucesso DDT")]
         [NUnit.Framework.TestCaseAttribute("\"standard_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Backpack\"", "\"1\"", "\"$29.99\"", null)]
-        [NUnit.Framework.TestCaseAttribute("\"visual_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Backpack\"", "\"1\"", "\"$9.99\"", null)]
+        [NUnit.Framework.TestCaseAttribute("\"visual_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Bike Light\"", "\"1\"", "\"$9.99\"", null)]
+        [NUnit.Framework.TestCaseAttribute("\"standard_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Bolt T-Shirt\"", "\"1\"", "\"$15.99\"", null)]
+        [NUnit.Framework.TestCaseAttribute("\"standard_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Fleece Jacket\"", "\"1\"", "\"$49.99\"", null)]
+        [NUnit.Framework.TestCaseAttribute("\"visual_user\"", "\"secret_sauce\"", "\"Products\"", "\"Sauce Labs Onesie\"", "\"1\"", "\"$7.99\"", null)]
+        [NUnit.Framework.TestCaseAttribute("\"standard_user\"", "\"secret_sauce\"", "\"Products\"", "\"Test.allTheThings() T-Shirt (Red)\"", "\"1\"", "\"$15.99\"", null)]
         public void SelecaoDeProdutoComSucessoDDT(string usuario, string senha, string tituloSecao, string produto, string quantidade, string preco, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
@@ -168,7 +172,7 @@ namespace sauceDemo139.Features
         testRunner.Then(string.Format("exibe a pagina do carrinho com quantidade {0}", quantidade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 22
-        testRunner.And("nome do produto \"Sauce Labs Backpack\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+        testRunner.And(string.Format("nome do produto {0}", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 23
         testRunner.And(string.Format("o preco como {0}", preco), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

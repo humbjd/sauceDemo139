@@ -98,7 +98,8 @@ namespace MyNamespace
         [Then(@"nome do produto ""(.*)""")]
         public void ThenNomeDoProduto(string product)
         {
-            Assert.That(driver.FindElement(By.CssSelector("div.inventory_item_name")).Text, Is.EqualTo(product));
+            Assert.That(driver.FindElement(By.CssSelector("div.inventory_item_name ")).Text, Is.EqualTo(product));
+                                           
         }
 
         [Then(@"o preco como ""(.*)""")]
