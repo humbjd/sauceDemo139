@@ -8,7 +8,7 @@ Feature: Selecionar Produto na Loja PO
         When adiciono o produto <produto> ao carrinho PO
         And clico no icone do carrinho de compras PO
         Then exibe a pagina do carrinho com quantidade <quantidade> PO
-        And nome do produto "Sauce Labs Backpack" PO
+        And nome do produto <produto> PO
         And o preco como <preco> PO
 
     Examples:

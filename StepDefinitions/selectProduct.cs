@@ -19,7 +19,7 @@ namespace MyNamespace
             _scenarioContext = scenarioContext;
         }
 
-        [BeforeScenario]
+        [BeforeScenario] // Porque fizemos Hooks
         public void SetUp()
         {
             // Instanciando o ChromeDriver atraves do WeDriverManager
@@ -30,7 +30,7 @@ namespace MyNamespace
 
         }
 
-        [AfterScenario]
+        [AfterScenario] // Porque fizemos Hooks
         public void TearDown()
         {
             driver.Quit(); // encerra o Selenium

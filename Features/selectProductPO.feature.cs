@@ -127,7 +127,7 @@ namespace sauceDemo139.Features
         testRunner.Then(string.Format("exibe a pagina do carrinho com quantidade {0} PO", quantidade), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 11
-        testRunner.And("nome do produto \"Sauce Labs Backpack\" PO", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+        testRunner.And(string.Format("nome do produto {0} PO", produto), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
         testRunner.And(string.Format("o preco como {0} PO", preco), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

@@ -25,7 +25,7 @@ Feature: Selecionar Produto na Loja
     Examples:
     | usuario         | senha          | tituloSecao | produto                             | quantidade | preco    |
     | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Backpack"               | "1"        | "$29.99" |
-    | "visual_user"   | "secret_sauce" | "Products"  | "Sauce Labs Bike Light"             | "1"        | "$9.99"  |
+    | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Bike Light"             | "1"        | "$9.99"  |
     | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Bolt T-Shirt"           | "1"        | "$15.99" |
     | "standard_user" | "secret_sauce" | "Products"  | "Sauce Labs Fleece Jacket"          | "1"        | "$49.99" |
     | "visual_user"   | "secret_sauce" | "Products"  | "Sauce Labs Onesie"                 | "1"        | "$7.99"  |
